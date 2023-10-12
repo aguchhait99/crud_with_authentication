@@ -15,6 +15,8 @@ import { toast } from "react-toastify";
 const Navbar = () => {
   const [auth, setAuth] = useAuth();
 
+  const navigate = useNavigate()
+
   const handleLogout = () => {
     setAuth({
       ...auth,
